@@ -1,4 +1,4 @@
-# react-etrmks
+# HTML-SCSS_Assignment
 https://react-etrmks.stackblitz.io/
 
 
