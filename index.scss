@@ -1,8 +1,121 @@
-.header{
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+.news-feeds{
+  .new-card-wrap{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 1px solid #203864;
+  }
+  .news-box{
+    display: flex;
+    margin-top: 7px;
+    align-items: center;
+    .rect-box{
+      height: 100px;
+      width: 100px;
+      background: #203864;
+      min-width: 100px;
+    }
+    .news-info{
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 10px;
+      .title{
+        color:#c45a11;
+        font-weight: 400;
+      }
+      .bottom-info{
+        display: flex;
+        justify-content: space-between;
+        .date-style{
+          color: #858586;
+        }
+        .name-style{
+          color: #2f5597;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+header{
   width: 100%;
   background: #203864;
   height: 100px;
-  img{
-    height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .image-wrap{
+    img{
+        height: 100px;
+      }
+  }
+  .search-wrap{
+    input{
+      width: 200px;
+      height: 40px;
+      padding: 10px;
+      font-size: 20px;
+      &::placeholder {
+        color: #c45a11;
+        opacity: 1;
+      }
+    }
   }
 }
+h1{
+  font-size: 30px;
+  strong{
+    font-weight: 600;
+  }
+}
+.welcome-dec{
+  background: #b4c7e7;
+  padding:20px;
+  p{
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+strong{
+  font-weight: bold;
+}
+  .color-strip{
+    position: absolute;
+    background: #002060;
+    height: 7px;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    right: 0;
+    &.orange-strip{
+      background: #c45a11;
+    }
+    &.light-blue{
+      background: #2f5597;
+    }
+  }
+.about-us{
+  background: #d0cece;
+  position:relative;
+  padding:20px;
+  margin-top: 20px;
+  color: #002060;
+
+  p{
+    margin-left: 10px;
+    font-size: 18px;
+    a{
+      font-size: 16px;
+      text-decoration: underline;
+    }
+  }
+  
+}
+
