@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import imageLogo from './hesus.js';
 import './reset.scss'
+import './breakpoint.scss';
+import './grid.scss';
 import './index.scss';
 
 class App extends Component {
@@ -26,6 +28,17 @@ class App extends Component {
         </header>
         <main>
           <section className="main-dec">
+            <article className="welcome-dec">
+              <h1>Welcome <strong>Jack</strong></h1>
+              <p>We are always looking forward to meet new talants! You are willing to become part of the  advanture and support us in the development of our activity? Dont hesitate anyomore and join us!</p>
+            </article>
+
+            <article className="about-us">
+            <div className="color-strip"></div>
+              <h1><strong>About Us</strong></h1>
+              <p>Safe garding the environment has become a core concern of the developemnt of the large cities. <a><strong>View More</strong></a></p>
+            </article>
+          </section>
           <section className="news-feeds">
             <h1><strong>News Feed</strong></h1>
             <article className="new-card-wrap">
@@ -62,18 +75,6 @@ class App extends Component {
               </div>
             </article>
           </section>
-            <article className="welcome-dec">
-              <h1>Welcome <strong>Jack</strong></h1>
-              <p>We are always looking forward to meet new talants! You are willing to become part of the  advanture and support us in the development of our activity? Dont hesitate anyomore and join us!</p>
-            </article>
-
-            <article className="about-us">
-            <div className="color-strip"></div>
-              <h1><strong>About Us</strong></h1>
-              <p>Safe garding the environment has become a core concern of the developemnt of the large cities. <a><strong>View More</strong></a></p>
-            </article>
-          </section>
-          
           <section className="registration-wrap">
           <h1>Registration</h1>
           <form>
